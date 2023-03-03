@@ -1,0 +1,43 @@
+    li {
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+        list-style: none;
+        width: 100%;
+        padding: 10px 40px 12px 22px;
+        font-size: 18px;
+        background-color: rgb(237, 123, 241);
+        position: relative;
+        border-radius: 22px;
+    }
+
+
+    .icon {
+        padding-right: 15px;
+        font-size: 20px;
+
+    }
+
+    .btnSpan {
+        width: 140px;
+        border-radius: 30px;
+        position: absolute;
+        right: 0px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .btnSpan button {
+        padding: 6px 14px;
+        border: 2px solid green;
+        border-radius: 14px;
+    }
+
+    .delete-button:hover {
+        background-color: #fc4444d6;
+    }
+
+    .edit:hover {
+        background-color: rgb(96, 239, 98);
+    }

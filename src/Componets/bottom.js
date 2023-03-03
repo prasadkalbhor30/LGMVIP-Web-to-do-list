@@ -1,32 +1,36 @@
 import React, { useState } from 'react';
 import './bottom.css'
 import Task from './tasks'
+
+import Taskitem from './taskItem'
 const Bottom = () => {
+    const [tasklist, settaskState] = useState(Task);
+    const [oldData, setoldData] = useState(Task);
 
+    // function to delete to do list task 
+    const deletetask = (id) => {
+        const newData=oldData.filter(element=> (element.id!=id));
+        setoldData(newData);
+        settaskState(newData);
+    }
 
-    const [taskList, setTasksValue] = useState('noTask');
- 
-                    Task.forEach(element => {
     return (
         <div className="bottom">
             <h3>Task To Do</h3>
             <ul id="taskList" className="noTask">
-                {/* <h2 className="headline {taskList}">No tasks</h2> */}
                 {
-                       
+                    tasklist.map(Element => (
+                        <Taskitem key={Element.id} elm={Element} delete={deletetask}/>
+                    )
+                    )
                 }
-            </ul>
-            <h3>Completed Task</h3>
-            <ul id="completedTaskList">
-                <h2 className="headline {completedTask}">No tasks</h2>
-
+                
 
             </ul>
+            
         </div>
-    ); console.log("i am this " +element.task);
-                        <h2 className="headline {taskList}">No tasks</h2>
+    );
 
-                    });
 }
 
 export default Bottom; 

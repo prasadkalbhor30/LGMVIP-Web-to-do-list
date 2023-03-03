@@ -1,7 +1,6 @@
-
 h3 {
     font-weight: 700;
-    background-color:#02ff0057;
+    background-color: #02ff0057;
     text-align: center;
     border: 2px solid green;
     border-radius: 20px;
@@ -20,7 +19,14 @@ h3 {
 .displayNone {
     display: none;
 }
-.headline{
+
+.headline {
     padding: 20px 10px;
     text-align: center;
+}
+
+
+ul {
+    list-style: None;
+    width: 100%;
 }
