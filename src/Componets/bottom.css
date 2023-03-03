@@ -1,0 +1,26 @@
+
+h3 {
+    font-weight: 700;
+    background-color:#02ff0057;
+    text-align: center;
+    border: 2px solid green;
+    border-radius: 20px;
+    margin-top: 4px;
+}
+
+.empty {
+    padding: 20px 20px;
+}
+
+.noTasks {
+    text-align: center;
+    padding: 20px;
+}
+
+.displayNone {
+    display: none;
+}
+.headline{
+    padding: 20px 10px;
+    text-align: center;
+}

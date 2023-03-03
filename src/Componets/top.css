@@ -1,0 +1,54 @@
+.main {
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+    border: 2px solid greenyellow;
+    border-radius: 20px;
+    height: 80vh;
+
+}
+
+.top {
+    background-color: rgb(178 24 210);
+    border-radius: 20px;
+    padding: 10px;
+    height: 150px;
+
+}
+
+h1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.inp {
+    width: 70%;
+    font-size: 16px;
+    padding: 8px 12px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+
+
+input {
+    width: 80%;
+    font-size: 16px;
+    padding: 12px 12px;
+    border: 2px solid green;
+    border-radius: 20px 0px 0px 20px;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.Add {
+    padding: 6px 12px;
+    border-radius: 0px 20px 20px 0px;
+}
