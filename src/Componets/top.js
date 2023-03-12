@@ -4,14 +4,16 @@ import './top.css';
 function Top(props) {
 
     const [input, setinput] = useState('');
-    const addTask = () => {
+    const addTask = (event) => {
+        event.preventDefault();
         const newobj = {
             'id': new Date().getTime().toString(),
-            task: input
+            task: input,
+            taskStatus: "notdone"
         }
         setinput('');
 
-        const newdata = [...props.Task, newobj];
+        const newdata = [newobj, ...props.Task];
         props.changeState(newdata);
     }
     const inputChange = (event) => {
@@ -21,11 +23,10 @@ function Top(props) {
     return (
         <div className="top">
             <h1>My To Do List</h1>
-            <div className="inp">
-
-                <input id="Myinput" type="text" onChange={inputChange} value={input} placeholder="Title..." />
-                <button onClick={addTask} className="Add">Add</button>
-            </div>
+            <form className="inp" onSubmit={addTask}>
+                <input id="Myinput" type="text" onChange={inputChange} value={input} required placeholder="Title..." />
+                <button className="Add">Add</button>
+            </form>
         </div>
     );
 }

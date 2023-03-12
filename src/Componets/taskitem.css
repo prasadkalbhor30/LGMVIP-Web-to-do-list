@@ -4,11 +4,12 @@
         margin-top: 5px;
         list-style: none;
         width: 100%;
-        padding: 10px 40px 12px 22px;
+        padding: 10px 90px 12px 22px;
         font-size: 18px;
         background-color: rgb(237, 123, 241);
         position: relative;
         border-radius: 22px;
+        border: px solid green;
     }
 
 
@@ -18,8 +19,13 @@
 
     }
 
+    #done{
+        color: green;
+        text-decoration: line-through;
+    }
+
     .btnSpan {
-        width: 140px;
+        width: 100px;
         border-radius: 30px;
         position: absolute;
         right: 0px;
@@ -38,6 +44,4 @@
         background-color: #fc4444d6;
     }
 
-    .edit:hover {
-        background-color: rgb(96, 239, 98);
-    }
+   
